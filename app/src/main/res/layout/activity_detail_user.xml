@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    tools:context=".DetailUserActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:civ_border_color="#FF909090"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/tv_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_user"
+        app:layout_constraintEnd_toEndOf="@+id/img_photo"
+        app:layout_constraintStart_toStartOf="@+id/img_photo"
+        app:layout_constraintTop_toBottomOf="@+id/img_photo" />
+
+    <TextView
+        android:id="@+id/tv_detail_explain_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/explain_username"
+        app:layout_constraintStart_toStartOf="@+id/img_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_name" />
+
+    <TextView
+        android:id="@+id/tv_detail_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/username"
+        app:layout_constraintEnd_toEndOf="@+id/img_photo"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_explain_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_name" />
+
+    <TextView
+        android:id="@+id/tv_detail_explain_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/explain_location"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_explain_username"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_username" />
+
+    <TextView
+        android:id="@+id/tv_detail_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/location"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_explain_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_username" />
+
+    <TextView
+        android:id="@+id/tv_detail_explain_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/explain_company"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_explain_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_location" />
+
+    <TextView
+        android:id="@+id/tv_detail_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/company"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_explain_company"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_location" />
+
+    <TextView
+        android:id="@+id/tv_detail_explain_repository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/explain_respository"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_explain_company"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_company" />
+
+    <TextView
+        android:id="@+id/tv_detail_repository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/respository"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_explain_repository"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_explain_company" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
